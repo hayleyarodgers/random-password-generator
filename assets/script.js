@@ -1,6 +1,4 @@
-
-
-// Array of lowercase characters 
+// Define array of lowercase characters 
 var lowerCaseCharacters = [
   'a',
   'b',
@@ -30,7 +28,7 @@ var lowerCaseCharacters = [
   'z'
 ];
 
-// Array of uppercase characters 
+// Define array of uppercase characters 
 var upperCaseCharacters = [
   'A',
   'B',
@@ -60,7 +58,7 @@ var upperCaseCharacters = [
   'Z'
 ];
 
-// Array of numeric characters 
+// Define array of numeric characters 
 var numericCharacters = [
   '0',
   '1',
@@ -74,7 +72,7 @@ var numericCharacters = [
   '9'
  ];
 
-// Array of special chartacters
+// Define array of special chartacters
 var specialCharacters = [
   '@',
   '%',
@@ -105,16 +103,17 @@ function generatePassword() {
   // Ask user for their password length.
   var userChoiceLength = window.prompt("How many characters would you like your password to contain?");
 
-  // If password length is less than 8 characters or more than 128 characters, restart the application.
-  if (userChoiceLength < 8) {
+  // If password length is not a number, less than 8 characters or more than 128 characters, restart the application.
+  if (isNaN(userChoiceLength)) {
+    alert ("Password length must be numerical.");
+    return;
+  } else if (userChoiceLength < 8) {
     alert ("Password length must be at least 8 characters.");
     return;
-  }
-
-  if (userChoiceLength > 128) {
+  } else if (userChoiceLength > 128) {
     alert ("Password length must be less than 129 characters.");
     return;
-  } 
+  }
 
   // Ask user for their password criteria.
   var userChoiceLowerCase = window.confirm("Click OK if you would you like your password to include lowercase characters.");
@@ -147,10 +146,9 @@ function generatePassword() {
       text += randomCharacter
     }
 
-  console.log(text)
+  return text
 
 }
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
