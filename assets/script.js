@@ -1,4 +1,4 @@
-// Define array of lowercase characters 
+// Define array of lowercase characters.
 var lowerCaseCharacters = [
   'a',
   'b',
@@ -28,7 +28,7 @@ var lowerCaseCharacters = [
   'z'
 ];
 
-// Define array of uppercase characters 
+// Define array of uppercase characters.
 var upperCaseCharacters = [
   'A',
   'B',
@@ -58,7 +58,7 @@ var upperCaseCharacters = [
   'Z'
 ];
 
-// Define array of numeric characters 
+// Define array of numeric characters.
 var numericCharacters = [
   '0',
   '1',
@@ -72,7 +72,7 @@ var numericCharacters = [
   '9'
  ];
 
-// Define array of special chartacters
+// Define array of special chartacters.
 var specialCharacters = [
   '@',
   '%',
@@ -150,10 +150,10 @@ function generatePassword() {
 
 }
 
-// Get references to the #generate element
+// Get references to the #generate element.
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// Write password to the #password input.
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -164,5 +164,5 @@ function writePassword() {
   }
 }
 
-// Add event listener to generate button
+// Add event listener to generate button.
 generateBtn.addEventListener("click", writePassword);
