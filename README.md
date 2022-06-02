@@ -25,4 +25,4 @@ To access the repository where the code I refactored is saved, click [here](http
 
 ## Credits
 
-This is the [starter code](https://github.com/coding-boot-camp/friendly-parakeet) that I refactored from [Xandromus](https://github.com/Xandromus/Xandromus).
+This is the [starter code](https://github.com/coding-boot-camp/friendly-parakeet) that I refactored from [Xandromus](https://github.com/Xandromus/Xandromus). I used the HTML and CSS that had already been written in this starter code, as well as the Javascript code which corresponds to lines 153-168 in my Javascript file.
